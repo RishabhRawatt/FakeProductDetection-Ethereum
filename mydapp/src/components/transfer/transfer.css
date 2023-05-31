@@ -1,0 +1,164 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.descrip2 {
+  width: 30%;
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 150%;
+  color: #953f69;
+  margin-left: 32%;
+}
+.head2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ba3359;
+}
+.ip2 {
+  display: block;
+  margin: 5%;
+  margin-left: 32%;
+  background: rgba(245, 181, 57, 0.38);
+  border-radius: 12px;
+  width: 35%;
+  height: 5%;
+  padding: 1%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 0.81);
+}
+.btn2 {
+  background: #a35ecb;
+  border-radius: 13px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3em;
+  line-height: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: #ffffff;
+  width: 20%;
+  margin-left: 50%;
+}
+.resltbox2 {
+  width: 80%;
+  height: 10vh;
+  background: #ff6b71;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px 1px black;
+  margin-left: 10%;
+}
+.reslt2 {
+  margin: 3%;
+  font-weight: 600;
+}
+
+/* new css */
+
+.heading-transfer{
+  text-align: center;
+}
+
+.right-transfer{
+  margin-top: 5%;
+}
+
+.transfer-or{
+    margin-left: 60%;
+}
+.scanid-button-transfer{
+  background: #dbcbab;
+  width: 25%;
+    height: 15%;
+    margin-left: 50%;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: ease-in-out 0.4s;
+}
+
+.scanid-button-transfer:hover{
+
+  transform: scale(1.1);
+  opacity: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);;
+}
+
+.right-box{
+    height: 75vh;
+}
+
+.main-transfer {
+  display: flex;
+}
+
+.input-transfer {
+  margin-left: 15%;
+  margin-top: 7%;
+}
+
+.transfer-button {
+  margin-top: 10%;
+  margin-left: 40%;
+  background: #dbcbab;
+  width: 35%;
+  height: 15%;
+  position: relative;
+  font-size: 17px;
+  display: inline-block;
+  transition: all 0.2s;
+  border: 3px solid black;
+  font-family: inherit;
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.transfer-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.transfer-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.transfer-button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.qr-reader-transfer{
+  width: 25%;
+  margin-left: 20%;
+}
+
+

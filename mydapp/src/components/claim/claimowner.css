@@ -1,0 +1,206 @@
+/* new css */
+
+.right-claim {
+  margin-top: 0%;
+  margin-left: -10px;
+}
+
+.claimimg {
+  /* margin-left: 7rem; */
+}
+
+.claim-div {
+  display: flex;
+}
+
+.right-box {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  width: 30rem;
+  height: 30rem;
+  background: #dbcbab;
+}
+
+.heading-claim {
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.enterpid {
+  /* position: absolute; */
+  /* z-index: 3; */
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.line {
+  border: 3px solid #000000;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.inputclaim {
+  margin-top: 3rem;
+  margin-left: 5rem;
+}
+
+.claim-or {
+  text-align: end;
+  margin-right: 30%;
+}
+
+.qr-reader-claim {
+  margin-left: 40%;
+  margin-top: 5%;
+  width: 100px;
+  height: 100px;
+  content: "Scanning";
+  background-image: url(border.png);
+  background-size: 100px;
+  /* border: 3px dotted #000000; */
+}
+
+.scanid-button-claim {
+  background: #dbcbab;
+  width: 25%;
+ height: 10%;
+  border: 3px solid #000000;
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 55%;
+  transition: ease-in-out 0.4s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.scanid-button-claim:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.claim-button {
+  background:#dbcbab;
+  width: 30%;
+  height: 10%;
+  /* margin: auto; */
+  margin-top: 20%;
+  margin-left: 50%;
+  position: relative;
+  font-size: 17px;
+  display: inline-block;
+  transition: all 0.2s;
+  border: 3px solid black;
+  font-family: inherit;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.claim-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.claim-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.claim-button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.prompt-claim{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.claim-button:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+/* test */
+
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 180px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 17px;
+  color: #636363;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  width: 300px;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 20px;
+  color: #000000;
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  width: 300px;
+  border-width: 3px;
+  /* border: 2px solid black; */
+  border-image: linear-gradient(to right, #686868, #000000);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}

@@ -1,0 +1,118 @@
+
+
+.ip{
+    display:block;
+    margin:5%;
+    align-self: center;
+    font-size: large;
+    margin-top: 20%;
+}
+.card{
+    width:25%;
+    height: 80%;
+    background: #FF6B71;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 1px black;
+}
+.mainView{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.addprobtn{
+background: #BA3359;
+border-radius: 29px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 200;
+font-size: 2em;
+line-height: 100%;
+width:35%;
+height: 20%;
+color: #FFFFFF;
+align-self: center;
+margin-top: 10%;
+}
+.cardbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    align-self: center;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 2em;
+line-height: 100%;
+margin-top: 30%;
+
+color: #FFFFFF;
+
+}
+
+.qr-code{
+    /* content: "hello"; */
+    margin-left: 20%;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* new ccs */
+.main-div{
+    display: flex;
+}
+
+.inputadd{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.left{
+    margin-left: 10%;
+    transform: scale(0.8);
+}
+.right{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+
+.heading-add{
+    text-align: center;
+}
+
+
+.add-button{
+        background: #dbcbab;
+        width: 25%;
+        height: 9%;
+        border: 3px solid #000000;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 6%;
+        margin-left: 48%;
+        transition: ease-in-out 0.4s;
+        cursor: pointer;
+        border-radius: 10px;
+}
+
+      .add-button:hover {
+        transform: scale(1.1);
+        opacity: 1;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      
+
+
+      .alert-msg{
+        position: absolute;
+        font-size: 10px;
+        /* display: flex; */
+        right: 0;
+        
+      }
