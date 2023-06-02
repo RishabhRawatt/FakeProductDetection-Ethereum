@@ -1,19 +1,14 @@
 import React, { useState } from "react";
-// import logo3 from './Images/lastimg.png'
 import "./transfer.css";
 import { ethers } from "ethers";
 import tansferpng from "./transfer.png";
 import { QrReader } from "react-qr-reader";
 
-//for alert
 import Alert from "../Alert/Alert.jsx";
 
-// import { myprovider,walletAbi,walletAddress } from './data';
 import { myprovider, walletAbi, walletAddress } from "../../assets/data.js";
 
 const TransferOwnership = () => {
-  //for alert
-
   const [alertMsg, setAlertMsg] = useState("");
   const [alertvis, setAlertVis] = useState("hide");
   const [alertColor, setAlertColor] = useState("");
@@ -65,7 +60,6 @@ const TransferOwnership = () => {
       setWalletId("");
       await tx.wait();
       console.log(tx);
-      // alert("Product transferred successfully!");
       setAlertMsg("Product transferred successfully!");
       setAlertVis("showAlert");
       setAlertColor("green");
@@ -77,7 +71,7 @@ const TransferOwnership = () => {
         setAlertVis("showAlert");
         setAlertColor("red");
       } else {
-      alert(error);
+        alert(error);
       }
     } finally {
       setTransferring(false);
@@ -97,7 +91,6 @@ const TransferOwnership = () => {
         <h1 className="heading-transfer">Transfer Ownership</h1>
         <div className="right-box">
           <div className="input-transfer">
-            {/* pid div */}
             <div className="form__group field">
               <input
                 required=""
@@ -135,7 +128,6 @@ const TransferOwnership = () => {
                 <QrReader
                   className="qr-reader-transfer"
                   onResult={handleScanResult}
-                  // style={{ width: "25%" }}
                 />
               </>
             )}

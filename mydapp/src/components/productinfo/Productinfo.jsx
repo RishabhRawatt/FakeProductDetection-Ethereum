@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import { ethers } from "ethers";
@@ -53,11 +52,6 @@ const Productinfo = () => {
             <span className="product-desc-heading">Description</span>
             <h2 className="product-desc">{PDescription}</h2>
           </div>
-
-          {/* <div className="box-center">
-            <div className="circle-shape"></div>
-            <img className="product-img" src={productinfoimg} alt="" />
-          </div> */}
 
           <div className="box-right">
             <h2>PAST OWNERS</h2>
