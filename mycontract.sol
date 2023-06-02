@@ -39,24 +39,15 @@ contract ProductOwnership {
         bytes32 productId = sha256(abi.encodePacked(productName));
         products[productId] = Product({id: productId, name: productName,description:productDesc});
         tempProductId=productId;
-        // AllproductIds.push(productId);
          emit ProductAdded(productId);
         return productId;
 
     }
 
-    // Function to add a new product
-    // function addProduct(bytes32 productId) public {
-    //     // Only the contract deployer can add new products
-    //     require(msg.sender == contractDeployer, "Only the contract deployer can add new products.");
-    //     // Add the new product
-    //     productOwnership[productId] = address(0);
-    // }
-    
 
-     // Function to transfer ownership of a product
 
-     //write function
+     // Function to transfer ownership of a product(write function)
+
 
     function transferOwnership(bytes32 productId, address newOwner) public {
         // Only the current owner can transfer ownership
@@ -70,17 +61,15 @@ contract ProductOwnership {
         productOwnership[productId] = newOwner;
     }
 
-    // Function to show all previous owners of a product
+    // Function to show all previous owners of a product(read function)
 
-    //read function
     function showOwnershipHistory(bytes32 productId) public view returns (address[] memory) {
         return productOwnershipHistory[productId];
     }
 
 
-    // Function to claim ownership of a product
+    // Function to claim ownership of a product(write function)
 
-    //write function
     function claimOwnership(bytes32 productId) public {
         // Only unowned products can be claimed
         require(
@@ -101,6 +90,7 @@ contract ProductOwnership {
 // }
 
 
+//extra functionality that can be added
 
 //     function getProductsByOwner(address owner) public view returns (bytes32[] memory) {
 //     bytes32[] memory productIds;
