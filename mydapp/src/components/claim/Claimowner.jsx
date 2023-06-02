@@ -3,16 +3,13 @@ import "./claimowner.css";
 import claimpng from "./claim.png";
 import { ethers } from "ethers";
 import { useState } from "react";
-// import { myprovider, walletAbi, walletAddress } from "./data";
-import { myprovider, walletAbi, walletAddress } from "../../assets/data.js";
+import { walletAbi, walletAddress } from "../../assets/data.js";
 
 import { QrReader } from "react-qr-reader";
 
 import Alert from "../Alert/Alert";
 
-//try react senetic ui and css
-
-//test claimid
+//test claimid temp for testing
 //0x5dd95c98aff2e783a09348f600def0d5e4e476f71e85e9be91de86aab36544cd
 
 const ClaimOwner = () => {
@@ -20,12 +17,10 @@ const ClaimOwner = () => {
   const [isScanning, setIsScanning] = useState(false);
   const [claiming, setClaiming] = useState(false);
 
-
-
-    //for alert prompts
-    const [alertMsg,setAlertMsg]=useState("");
-    const [alertvis,setAlertVis]=useState("hide");
-    const[alertColor,setAlertColor]=useState("");
+  //for alert prompts
+  const [alertMsg, setAlertMsg] = useState("");
+  const [alertvis, setAlertVis] = useState("hide");
+  const [alertColor, setAlertColor] = useState("");
 
   const handleScanButtonClick = () => {
     setIsScanning(true);
@@ -72,8 +67,7 @@ const ClaimOwner = () => {
       } else {
         alert(error);
       }
-    }
-    finally {
+    } finally {
       setClaiming(false); // set claiming state to false to remove loading animation
     }
   }
@@ -105,9 +99,11 @@ const ClaimOwner = () => {
             </div>
             <h3 className="claim-or">or</h3>
 
-      
             {!isScanning && (
-              <button onClick={handleScanButtonClick} className="scanid-button-claim">
+              <button
+                onClick={handleScanButtonClick}
+                className="scanid-button-claim"
+              >
                 Scan QR
               </button>
             )}
@@ -124,7 +120,6 @@ const ClaimOwner = () => {
                 <QrReader
                   className="qr-reader-claim"
                   onResult={handleScanResult}
-                  // style={{ width: "25%" }}
                 />
               </>
             )}

@@ -1,12 +1,7 @@
-/* new css */
 
 .right-claim {
   margin-top: 0%;
   margin-left: -10px;
-}
-
-.claimimg {
-  /* margin-left: 7rem; */
 }
 
 .claim-div {
@@ -28,8 +23,6 @@
 }
 
 .enterpid {
-  /* position: absolute; */
-  /* z-index: 3; */
   font-size: 20px;
   font-weight: 700;
 }
@@ -59,7 +52,6 @@
   content: "Scanning";
   background-image: url(border.png);
   background-size: 100px;
-  /* border: 3px dotted #000000; */
 }
 
 .scanid-button-claim {
@@ -85,7 +77,6 @@
   background:#dbcbab;
   width: 30%;
   height: 10%;
-  /* margin: auto; */
   margin-top: 20%;
   margin-left: 50%;
   position: relative;
@@ -135,7 +126,6 @@
   opacity: 0;
 }
 
-/* test */
 
 .form__group {
   position: relative;
@@ -184,7 +174,6 @@
   font-weight: 700;
   width: 300px;
   border-width: 3px;
-  /* border: 2px solid black; */
   border-image: linear-gradient(to right, #686868, #000000);
   border-image-slice: 1;
 }
@@ -199,7 +188,6 @@
   font-weight: 700;
 }
 
-/* reset input */
 .form__field:required,
 .form__field:invalid {
   box-shadow: none;

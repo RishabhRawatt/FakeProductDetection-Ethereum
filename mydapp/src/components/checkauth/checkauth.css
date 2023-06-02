@@ -1,12 +1,7 @@
 
-
-/* new css */
-
-
 .outer-box{
   width: 150vh;
   height: 75vh;
-  /* box-sizing: border-box; */
   border: 3px solid black;
   background: #F3DCAF;
   border-radius: 25px;
