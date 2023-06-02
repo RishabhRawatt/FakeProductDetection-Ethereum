@@ -3,13 +3,11 @@ import "./home.css";
 import { ethers } from "ethers";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { myprovider, walletAbi, walletAddress } from "../../assets/data.js";
 
 import homepng from "./homepage.png";
-
 import funfacts from "./random.js";
 
-import { myprovider, walletAbi, walletAddress } from "../../assets/data.js";
-import AddProductForm from "../addproduct/Addproducts";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -64,24 +62,23 @@ const Home = () => {
     <div className="home-all">
       <div className="navbar">
         <div className="n-left">
-        <a
-            className="howwork"
-            href="http://localhost:3000/howwork"
-          >
+          <a className="howwork" href="http://localhost:3000/howwork">
             How it works
           </a>
-          {/* <button className="howwork"> How it works</button> */}
         </div>
         <div className="n-right">
           <span>Hello !</span>
-          <span>wallet address: <b>{address}</b></span>
-          <span><b>Balance</b>:{balance} ETH</span>
+          <span>
+            wallet address: <b>{address}</b>
+          </span>
+          <span>
+            <b>Balance</b>:{balance} ETH
+          </span>
         </div>
       </div>
 
       <div className="main">
         <div className="main-main-left">
-
           <a className="nav-hov main-pown" href="{</TransferOwnership>}">
             Product Owns
           </a>
