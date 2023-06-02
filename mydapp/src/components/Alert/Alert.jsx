@@ -4,14 +4,10 @@ import "./Alert.css";
 const Alert = (props) => {
   const { msg, visib,color } = props;
 
-  
-
 const handleclick = () => {
 
   const buttonclick = document.querySelector(".alert");
    buttonclick.classList.add("hide");
-  //  buttonclick.classList.remove("hide");
-
 }
 
   return (

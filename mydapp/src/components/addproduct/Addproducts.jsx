@@ -12,8 +12,6 @@ import "./Addproduct.css";
 const AddProductForm = () => {
   const [productName, setProductName] = useState("");
   const [productDescription, setProductDescription] = useState("");
-  // const [tempItem, setTempProduct] = useState("");
-  // const [tempItem, setTempProduct] = useState("");
 
   const [adding, setAdding] = useState(false);
   const [imgUrl, setImageUrl] = useState("");
@@ -25,12 +23,10 @@ const AddProductForm = () => {
 
   function handleProductNameChange(event) {
     setProductName(event.target.value);
-    // setProductNameValid(event.target.value !== '');
   }
 
   function handleProductDescriptionChange(event) {
     setProductDescription(event.target.value);
-    // setProductDescriptionValid(event.target.value !== '');
   }
 
   function checkblank() {
@@ -38,7 +34,6 @@ const AddProductForm = () => {
       setAlertMsg("please fill the details !!");
       setAlertVis("showAlert");
       setAlertColor("yellow");
-      //  alert("fill it");
     } else {
       handleAddProductClick();
     }
@@ -78,7 +73,6 @@ const AddProductForm = () => {
         setAlertColor("red");
       } else {
         console.log(error);
-        // setAlertMsg(error.message);
         alert(error.message);
       }
     } finally {

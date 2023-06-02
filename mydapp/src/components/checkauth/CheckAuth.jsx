@@ -30,32 +30,6 @@ const CheckAuth = () => {
   };
 
   return (
-    // <div className="container-1">
-    //   <div className="circle"></div>
-    //   <img className="qr-img" src={qrimg} alt="" srcset="" />
-    //   <h1 className="qr-text">SCAN PRODUCT QR</h1>
-
-    //   {!isScanning && (
-    //     <button className="scan-btn" onClick={handleScanButtonClick}>
-    //       Scan QR Code
-    //     </button>
-    //   )}
-    //   {isScanning && (
-    //     <>
-    //       <QrReader onResult={handleScanResult} style={{ width: "100%" }} />
-
-    //       <button className="scan-btn" onClick={() => setIsScanning(false)}>
-    //         Stop Scanning
-    //       </button>
-
-    //       <button className="scan-btn" onClick={handleProductInfo}>
-    //         Go to Product Info
-    //       </button>
-    //     </>
-    //   )}
-
-    //   <h3>Scanned code is: {data}</h3>
-    // </div>
     <div className="outer-box">
     <div className="auth-main">
       <div className="top-main">
@@ -86,34 +60,6 @@ const CheckAuth = () => {
     </div>
     
     </div>
-
-    
-      // <div className="container-1">
-    //   <div className="circle"></div>
-    //   <img className="qr-img" src={qrimg} alt="" srcset="" />
-    //   <h1 className="qr-text">SCAN PRODUCT QR</h1>
-
-    //   {!isScanning && (
-    //     <button className="scan-btn" onClick={handleScanButtonClick}>
-    //       Scan QR Code
-    //     </button>
-    //   )}
-    //   {isScanning && (
-    //     <>
-    //       <QrReader onResult={handleScanResult} style={{ width: "100%" }} />
-
-    //       <button className="scan-btn" onClick={() => setIsScanning(false)}>
-    //         Stop Scanning
-    //       </button>
-
-    //       <button className="scan-btn" onClick={handleProductInfo}>
-    //         Go to Product Info
-    //       </button>
-    //     </>
-    //   )}
-
-    //   <h3>Scanned code is: {data}</h3>
-    // </div>
   );
 };
 
