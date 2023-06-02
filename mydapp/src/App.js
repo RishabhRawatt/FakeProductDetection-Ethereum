@@ -1,29 +1,35 @@
-import React from 'react';
-import './App.css';
-import {Routes,Route} from 'react-router-dom';
-//import {useEffect} from "react";
-
-import { ethers } from 'ethers';
+import React from "react";
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
 
 import Login from "./components/login/Login.jsx";
-// import Home from "./components/home/Home.jsx"
-import Home from "./components/home/Home.jsx"
-// import Addproduct from './components/addproduct/Addproduct';
-import AddProductForm from './components/addproduct/Addproducts';
-import ClaimOwner from './components/claim/Claimowner';
-import TransferOwnership from './components/transfer/Transfer';
-import CheckAuth from './components/checkauth/CheckAuth';
-import Productinfo from './components/productinfo/Productinfo';
-import HowWork from './components/howWork/HowWork';
-
-// const {ethers} =require("ethers");
-
+import Home from "./components/home/Home.jsx";
+import AddProductForm from "./components/addproduct/Addproducts";
+import ClaimOwner from "./components/claim/Claimowner";
+import TransferOwnership from "./components/transfer/Transfer";
+import CheckAuth from "./components/checkauth/CheckAuth";
+import Productinfo from "./components/productinfo/Productinfo";
+import HowWork from "./components/howWork/HowWork";
 
 function App() {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/addproduct" element={<AddProductForm />} />
+        <Route path="/claimowner" element={<ClaimOwner />} />
+        <Route path="/transferowner" element={<TransferOwnership />} />
+        <Route path="/checkauth" element={<CheckAuth />} />
+        <Route path="/Productinfo" element={<Productinfo />} />
+        <Route path="/howwork" element={<HowWork />} />
+      </Routes>
+    </>
+  );
+}
+export default App;
 
-  const walletAddress = "0x6094d99649b5e40682e4994b85920ec96d3c4065";
-
-
+//temp abp for smartcontact
 
 // useEffect(() => {
 
@@ -230,7 +236,6 @@ function App() {
 //   // writeContract();
 // },[])
 
-
 // const walletAbi =[
 //   {
 //     "inputs": [
@@ -423,26 +428,3 @@ function App() {
 //     "type": "function"
 //   }
 // ];
-  return (
-    <>
-     
-    <Routes>
-      <Route path="/" element={<Login/>}/>
-      <Route path="/home" element={<Home/>}/>
-      <Route path="/addproduct" element={<AddProductForm/>}/>
-      <Route path='/claimowner' element={<ClaimOwner/>}/>
-      <Route path='/transferowner' element={<TransferOwnership/>}/>
-      <Route path='/checkauth' element={<CheckAuth/>}/>
-      <Route path='/Productinfo' element={<Productinfo/>}/>
-      <Route path='/howwork' element={<HowWork/>}/>
-
-      </Routes>
-      
-    {/* <Login/>
-    <Home/> */}
-    {/* <AddProductForm contractAddress={walletAddress} contractAbi={walletAbi} /> */}
-    </> 
-  );
-}
-
-export default App;

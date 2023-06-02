@@ -9,9 +9,6 @@ body {
 }
 
 .heading {
-  /* margin-left: 20%; */
-  /* margin-top: 10%; */
-
   color: #ba3359;
 }
 .logbtn {
@@ -47,7 +44,6 @@ body {
 .image {
   display: flex;
   flex-direction: row;
-  /* margin-left: 10%; */
 }
 
 .treeimg {
@@ -59,9 +55,6 @@ body {
 
 .main-login {
   display: flex;
-}
-.left {
-  /* display: flex; */
 }
 
 .right {
@@ -78,10 +71,8 @@ body {
 }
 
 .login-img {
-  /* transform: scale(1.2); */
   margin-top: -20%;
   margin-left: 10%;
-  /* margin-top:20vh; */
 }
 
 .login-btn {
